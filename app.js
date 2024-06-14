@@ -7,4 +7,8 @@ document.querySelectorAll(".drum").forEach((button)=>{
         }
         e.preventDefault();
     });
+    button.addEventListener("click", ()=>{
+        var a = new Audio(`${button.innerText}.mp3`);
+        a.play();
+    });
 });
